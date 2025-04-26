@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Philosopher:wght@700&family=Pinyon+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Philosopher:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+img {
+    width: 100%;
+}
+
+h1, p, a {
+    font-family: 'Philosopher', cursive, sans-serif;
+    color: var(--text-color);
+}
+
+h2 {
+    font-family: 'Pinyon Script', cursive, sans-serif;
+    color: var(--text-color);
+}
+
+:root {
+    --text-color: #c0aa61 ;
+    --main-color: rgba(243, 242, 248, 255);
+  }
+
+header{
+    width: 100%;
+    height: 80px;
+    background: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 100px;
+}
+
+.logo h1{
+    letter-spacing: 0.2em;
+}
+
+
+.hamburger{
+    display: none;
+}
+
+.nav-bar ul{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 6rem;
+}
+
+.nav-bar ul li a{
+    display: block;
+    color: #424345;
+    font-size: 16px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+    letter-spacing: 0.1em;
+}
+
+.nav-bar ul li a:hover{
+    color: var(--text-color);
+}
+
+.nav-bar ul li a.active {
+    color: var(--text-color);   
+}
+
+/*Icons*/
+.nav-icons-mobile{
+    display: none; /* Hidden by default */
+}
+.nav-icons{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.nav-icons i{
+margin-left: 30px;
+}
+/*Icons*/
+
+@media only screen and (max-width: 1320px) {
+    header {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    header {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: var(--text-color);
+        margin: 6px 0;
+    }
+
+    .nav-bar{
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: var(--main-color);
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .nav-bar.active{
+        height: 450px;
+    }
+
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+    }
+
+    .nav-bar ul li a{
+        margin-bottom: 12px;
+
+    }
+
+    .nav-icons{
+        display: none; /* Hide icons on mobile by default */
+    }
+
+    .nav-icons-mobile {
+        display: none; /* Hidden by default on mobile */
+        margin-left: 0;
+        padding: 10px 0;
+    }
+
+    .nav-bar.active .nav-icons-mobile {
+        display: flex; /* Show icons when menu is active */
+        justify-content: center;
+        gap: 25px; /* Slightly larger gap for mobile */
+    }
+}
+
+/* Hero Section */
+.hero-section{
+    background: var(--main-color);
+    text-align: center;
+    height: 75dvh;
+}
+
+.title-container{
+    font-family: 'Pinyon Script', cursive, sans-serif;
+    color: var(--text-color);
+    padding: 5rem;
+}
+
+.title-container h3{
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+}
+
+.title-container h1{
+    font-size: 1.6em;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #424345
+}
+
+.btn-hero{
+    background: var(--text-color);
+    color: #fff;
+    padding: 9px 24px;
+    border-radius: 50px;
+    border: none;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-top: 32px;
+    transition: 0.2s;
+}
+
+.btn-hero:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+@media (900px <= width <= 1800px) {
+    .title-container{
+        width: 70%;
+        background: var(--main-color);
+        text-align: center;
+        
+    }
+    
+}
+  
+/* Hero Section */
