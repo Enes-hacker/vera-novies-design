@@ -16,7 +16,7 @@ img {
 
 h1, p, a {
     font-family: 'Philosopher', cursive, sans-serif;
-    color: var(--text-color);
+  
 }
 
 h2 {
@@ -40,6 +40,7 @@ header{
 }
 
 .logo h1{
+    color: var(--text-color);
     letter-spacing: 0.2em;
 }
 
@@ -207,6 +208,7 @@ margin-left: 30px;
     cursor: pointer;
 }
 
+
 @media (900px <= width <= 1800px) {
     .title-container{
         width: 70%;
@@ -214,7 +216,221 @@ margin-left: 30px;
         text-align: center;
         
     }
+
+    .decorated-text{
+        position: relative;
+    }
+    
+    .line{
+        position: absolute;
+        left: 25%;
+        width: 4%;
+        height: 1px;
+        background: lightgray;
+        margin: 0 auto;
+        margin-top: 11px;
+    }
+    
+    .line:nth-child(2){
+        left: 24%;
+        margin: 0 auto;
+        margin-top: 8px;
+    }
+    
+    .line:nth-child(3){
+        right: 38%; 
+        margin: 0 auto;
+        margin-top: 8px;
+    }
+    
+    .line:nth-child(4){
+        right:  40%;
+        margin: 0 auto;
+        margin-top: 11px;
+    }
     
 }
   
 /* Hero Section */
+
+/*Grid Section*/
+/*SECTION 3RD GRID*/
+.grid {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /*4 is for columns 1fraction(fr) for size*/
+    grid-auto-rows: 7rem;
+    /*size of the rows*/
+    gap: 0.3rem;
+    width: 70%;
+    height: auto;
+    padding: 4rem;
+}
+
+.box {
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+
+.box:nth-child(1) {
+    
+    grid-column: 1/3;
+    grid-row: 1/4;
+}
+
+.box:nth-child(2) {
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+
+.box:nth-child(3) {
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+
+.box:nth-child(4) {
+    grid-column: 1/3;
+    grid-row: 4/6;
+}
+
+.box:nth-child(5) {
+
+    grid-column: 3/5;
+    grid-row: 3/5;
+}
+
+.box:nth-child(6) {
+
+    grid-column: 1/2;
+    grid-row: 6/8;
+}
+
+.box:nth-child(7) {
+
+    grid-column: 2/3;
+    grid-row: 6/8;
+}
+
+.box:nth-child(8) {
+
+    grid-column: 3/5;
+    grid-row: 5/8;
+}
+
+
+/*Text header positioning*/
+.inner-box-one {
+    position: absolute;
+    bottom: 1.5rem;
+}
+
+.inner-box-one h2 {
+    font-family: 'Philosopher', sans-serif;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #424345;
+}
+
+.inner-box-one h1 {
+    font-family: 'Pinyon Script', sans-serif;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 0.2rem;
+    color: var(--text-color); 
+}
+
+
+.inner-box-four {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+}
+
+.inner-box-four h2 {
+    font-family: 'Philosopher', sans-serif;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: #424345;
+}
+
+.inner-box-four h1 {
+    font-size: 24px;
+    text-align: right;
+    letter-spacing: 0.2rem;
+    font-family: 'Pinyon Script', sans-serif;
+    color: var(--text-color);
+}
+
+.inner-box-eight {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+}
+
+.inner-box-eight h2 {
+    font-family: 'Philosopher', sans-serif;
+    color:#424345;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+.inner-box-eight h1 {
+    font-family: 'Pinyon Script', sans-serif;
+    color: var(--text-color);
+    font-size: 24px;
+    letter-spacing: 0.2rem;
+}
+
+.inner-box-five {
+    border: 1px dashed;
+    position: absolute;
+    left: 1rem;
+    padding: 0.5rem;
+}
+
+.inner-box-five h1 {
+    font-family: 'Pinyon Script', sans-serif;
+    color: silver;
+    font-size: 16px;
+    letter-spacing: 0.2rem;
+
+}
+
+.inner-box-five h2 {
+    font-family: 'Philosopher', sans-serif;
+    letter-spacing: 0.6rem;
+    font-size: 32px;
+    text-align: center;
+    color: #898988;
+}
+
+.inner-box-five h2 span {
+    color: #beaa60;
+
+}
+
+
+
+.inner-box-five h3 {
+    font-family: 'Philosopher', sans-serif;
+    letter-spacing: 0.6rem;
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+
+/*Text header positioning end*/
+
+/*SECTION 3RD GRID END*/
+/*Grid Section*/
