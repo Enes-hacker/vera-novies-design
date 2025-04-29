@@ -434,3 +434,21 @@ margin-left: 30px;
 
 /*SECTION 3RD GRID END*/
 /*Grid Section*/
+/*Furniture section*/
+.furniture-category-title{
+    text-align: center
+}
+
+.furniture-category-title h2, h3{
+  
+    letter-spacing: 0.3rem;
+}
+
+.furniture-category-title h3{
+    font-family: 'Philosopher', cursive, sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+
+/*Furniture section end*/
