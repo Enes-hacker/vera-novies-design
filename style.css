@@ -435,6 +435,13 @@ margin-left: 30px;
 /*SECTION 3RD GRID END*/
 /*Grid Section*/
 /*Furniture section*/
+.furniture-category-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 2rem 18%;
+}
+
 .furniture-category-title{
     text-align: center
 }
@@ -448,6 +455,49 @@ margin-left: 30px;
     font-family: 'Philosopher', cursive, sans-serif;
     font-size: 28px;
     text-transform: uppercase;
+}
+
+
+.furniture-nav-bar ul{
+    display: flex;
+    
+}
+
+.furniture-nav-bar ul li a{
+    display: block;
+    color: #424345;
+    font-size: 14px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+    letter-spacing: 0.1em;
+}
+
+.furniture-nav-bar ul li a:hover{
+    color: var(--text-color);
+}
+
+.furniture-nav-bar ul li a.active {
+    color: var(--text-color);   
+}
+
+.furniture-nav{
+    width: 55%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.image-furniture{
+   width: 200px;
+   height: 300px;
+    border: 1px solid #898988;
+}
+
+.pricing-rating{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
 }
 
 
