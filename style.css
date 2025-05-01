@@ -14,7 +14,7 @@ img {
     width: 100%;
 }
 
-h1, p, a {
+h1, p, a, button {
     font-family: 'Philosopher', cursive, sans-serif;
   
 }
@@ -248,6 +248,7 @@ margin-left: 30px;
         margin: 0 auto;
         margin-top: 11px;
     }
+
     
 }
   
@@ -437,9 +438,17 @@ margin-left: 30px;
 /*Furniture section*/
 .furniture-category-grid{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     padding: 2rem 18%;
+    
+}
+
+.prod-title{
+    margin-top: 1rem;
+}
+
+.prod-title{
+    color: #898988;
 }
 
 .furniture-category-title{
@@ -460,15 +469,16 @@ margin-left: 30px;
 
 .furniture-nav-bar ul{
     display: flex;
-    
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
 }
 
 .furniture-nav-bar ul li a{
     display: block;
     color: #424345;
     font-size: 14px;
-    padding: 10px 25px;
-    border-radius: 50px;
+    padding: 10px 5px;
     transition: 0.2s;
     margin: 0 5px;
     letter-spacing: 0.1em;
@@ -483,7 +493,7 @@ margin-left: 30px;
 }
 
 .furniture-nav{
-    width: 55%;
+    width: 50%;
     margin: 0 auto;
     margin-top: 2rem;
 }
@@ -494,11 +504,181 @@ margin-left: 30px;
     border: 1px solid #898988;
 }
 
+.pricing p{
+    color: var(--text-color);
+}
+
 .pricing-rating{
     width: 90%;
     display: flex;
     justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+.furniture-category-box{
+    
+    padding: .5rem;
+}
+
+.furniture-category-btn {
+    text-align: center;
+}
+
+.furniture-category-btn button{
+    background: #fff;
+    color: #424345;
+    padding: 8px 24px;
+    border-radius: 50px;
+    border: 1px solid #424345;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-top: 32px;
+    transition: 0.2s;
+    background: unset;
+    cursor: pointer;
+}
+
+.furniture-category-btn button:hover{
+    background: var(--text-color);
+    color: #fff;
+    opacity: 0.8;
+}
+
+@media (350px <= width <= 900px) {
+    .pricing-rating{
+        display: flex;
+   flex-direction: column;
+       
+    }
+
+    .furniture-category{
+        margin: 0 auto;
+    }
+
+ 
+
+    
+    .promotion-container{ 
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+
+    .deal-title{     
+        width: 100%!important;
+    }
+
+    .deal-product{
+        width: 100%!important;
+    }
 }
 
 
 /*Furniture section end*/
+/*Deal Section*/
+.deal-of-the-week{
+   
+    padding: 5rem;
+}
+
+.promotion-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.deal-of-the-week{
+    background: var(--main-color);
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.deal-product{
+    height: 65dvh;
+    border: 2px solid #000;
+}
+
+.deal-title, .deal-product{
+    text-align: center;
+    padding: 2rem 0;
+    width: 35%;
+    
+}
+
+
+.d-desc{
+    margin-top: 1rem;
+    font-size: 12px;
+    line-height: 1.2rem;
+    color: #898988;
+}
+
+.deal-title h3{
+    font-family: 'Philosopher', cursive, sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #424345;
+}
+
+.deal-title h2{
+    letter-spacing: 0.5rem;
+}
+
+.timer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.timer-one {
+    /*2 borders design around timer numbers*/
+    position: relative;
+    border: 1px solid silver;
+    padding-top: 3.4rem;
+    padding-bottom: 3.7rem;
+    padding-left: 2.1rem;
+    padding-right: 2.1rem;
+    border-radius: 3.7rem;
+}
+
+.border {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0.3rem;
+    bottom: 0.3rem;
+    border: 1px solid silver;
+    padding: 0 auto;
+    border-radius: 3rem;
+}
+
+.border span {
+   
+    color: var(--text-color);
+    text-align: center;
+
+}
+
+.numbers {
+    text-align: center;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 28px;
+}
+
+.remains {
+    text-align: center;
+    font-size: 12px;
+    color: #898988;
+}
+
+
+
+/*Deal Section*/
