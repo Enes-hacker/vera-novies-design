@@ -855,10 +855,146 @@ margin-left: 30px;
 
  @media only screen and (max-width: 1024px){
 .latest-blog-container{
-    width: 100%;
-    
+    width: 100%; 
     margin-top: 1.5rem;
 }
  }
 
 /*LATEST BLOG*/
+
+/*FOOTER*/
+footer{
+    
+}
+.footer-container{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 3.5rem;
+}
+
+.footer-info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.address:nth-child(4){
+     margin-bottom: 1rem;
+}
+
+.address ul li a,
+.profile ul li a, 
+.support ul li a, 
+.categories button{
+    color: #898988;
+    padding: 0.5rem 0;
+    font-size: 14px;
+}
+
+.profile ul li a:hover,
+.support ul li a:hover{
+    color: var(--text-color);
+
+} 
+
+.address ul li,
+.profile ul li, 
+.support ul li
+{
+    margin-bottom: 0.9rem;
+    margin-right: 6rem;
+}
+
+.profile span{
+    color: var(--text-color);
+  
+}
+
+.categories button{
+    background: none;
+    padding: .3rem 1rem;
+    border: 1px solid #bcbcbe;
+    margin-top: .5rem;
+    
+}
+
+.categories button:hover{
+    background: var(--text-color);
+    color: #fff;
+    cursor: pointer;
+}
+
+.logo{
+    width: 100%;
+}
+
+.copyright{
+    text-align: center;
+    text-wrap: balance;
+    padding: 2rem 0;
+    color: #898988;
+    letter-spacing: 0.1rem;
+    font-size: 14px;
+}
+
+.copyright span{
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+.footer-info {
+    border-bottom: 1px solid lightgray;
+}
+
+.footer-nav{
+    display: block;
+    margin: 0 auto;
+    letter-spacing: 0.1em;
+    width: 75%;
+    margin-top: 1rem;
+    margin-top: 2rem;
+}
+
+.footer-nav-bar ul{
+    display: flex;
+    justify-content: space-between;
+ 
+}
+
+.footer-nav-bar ul li a{
+    color: #898988;
+    font-size: 12px;
+       margin-left: 1rem;
+}
+
+.footer-nav-bar ul li a:hover{
+    color: var(--text-color);
+    
+}
+
+@media (max-width: 768px) {
+   .footer-info{
+    flex-direction: column;
+    gap: 1rem;
+   }
+
+   .footer-nav{
+    width: 100%;
+    margin-top: 1rem;
+    
+    
+   }
+
+  .footer-nav-bar ul{
+    display: flex;
+flex-direction: column;
+    flex-wrap: wrap; 
+}
+
+.footer-nav-bar .active{
+    display: none;
+} 
+
+  }
+/*FOOTER*/
